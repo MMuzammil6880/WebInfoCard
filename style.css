@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+  background: linear-gradient(to bottom, rgba(0,0,0,.7), rgba(0,0,0,.5)), url("./assets/bg_pic.jpg") center no-repeat;
+  background-size: cover;	
+
+}
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+	height: 100vh;
+}
+body h1{
+  font-size: 2.5rem;
+  color: white;
+  margin-top: 3rem;
+  text-align: center;
+  margin-bottom: -3.5rem;
+  text-shadow: 0 2px 4px #0099ff ;
+  animation: fadeIn 3s ease-in;
+  animation-iteration-count: 1;
+
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.parent_div{
+  position: relative;
+  height: 25rem;
+  width: 20rem;
+  background: rgba(0, 0, 0, 0.26);
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.747);
+  display: flex;
+  overflow: hidden;
+  transition: 0.7s ease-in-out;
+  animation: fadeIn 2s ease-in;
+  animation-iteration-count: 1;
+}
+
+
+
+.parent_div:hover{
+  width: 40rem;
+}
+.parent_div .pic_box {
+  position: relative;
+  min-width: 20rem ;
+  height: 100%;
+  /* background: rgb(255, 255, 255); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+
+.parent_div .pic_box img{
+   height: 100%;
+   width: 100%;
+   border: 2px solid #0099ff;
+}
+
+.parent_div .detail_info{
+  position: relative;
+  min-width: 25rem;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.315);
+  color: white;
+}
+
+.detail_info .intro_img{
+  height: 110px;
+  width: 100px;
+  border-radius: 100px;
+  margin: -5.5rem 0 0 7rem;
+}
+.parent_div .detail_info .intro h4{
+  list-style: none;
+  font-size: 1.5rem;
+  padding: 1rem 0 0 3rem;
+
+}
+.parent_div .detail_info .intro p{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 1rem 6rem 0 1.8rem;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #0099ff;
+
+
+}
+
+.parent_div .detail_info .social_media{
+  list-style: none;
+  display: flex;
+  gap: 2rem ;  
+  margin: 3rem 0 0 3rem;
+
+  
+}
+
+.parent_div .detail_info .social_media i {
+  font-size: 24px;
+  color: white;
+}
+
+
+.parent_div .detail_info .social_media ul{
+  margin: 0 0 0 -10rem;
+
+}
+.parent_div .detail_info .social_media a{
+  text-decoration: none;
+}
+
+.parent_div .detail_info .social_media a:hover{
+  cursor: pointer;
+}
+.parent_div .detail_info::before{
+  content: ' ';
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-top: 10px solid transparent;
+  border-left: 10px solid #fff;
+}
+
+
+
